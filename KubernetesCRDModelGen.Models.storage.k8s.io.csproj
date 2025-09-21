@@ -1,0 +1,6 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <PackageId>KubernetesCRDModelGen.Models.storage.k8s.io</PackageId>
+    <RepositoryUrl>https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models.storage.k8s.io</RepositoryUrl>
+  </PropertyGroup>
+</Project>
