@@ -2,5 +2,6 @@
   <PropertyGroup>
     <PackageId>KubernetesCRDModelGen.Models.storage.k8s.io</PackageId>
     <RepositoryUrl>https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models.storage.k8s.io</RepositoryUrl>
+    <Description>C# models for Kubernetes CRDs in group storage.k8s.io</Description>
   </PropertyGroup>
 </Project>
