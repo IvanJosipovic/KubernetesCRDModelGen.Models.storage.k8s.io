@@ -13,7 +13,7 @@ namespace KubernetesCRDModelGen.Models.groupsnapshot.storage.k8s.io;
 /// VolumeGroupSnapshotContent represents the actual &quot;on-disk&quot; group snapshot object
 /// in the underlying storage system
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -37,7 +37,7 @@ public partial class V1beta1VolumeGroupSnapshotContentList : IKubernetesObject<V
 
     /// <summary>List of V1beta1VolumeGroupSnapshotContent objects.</summary>
     [JsonPropertyName("items")]
-    public IList<V1beta1VolumeGroupSnapshotContent>? Items { get; set; }
+    public required IList<V1beta1VolumeGroupSnapshotContent> Items { get; set; }
 }
 
 /// <summary>
@@ -56,7 +56,7 @@ public partial class V1beta1VolumeGroupSnapshotContentList : IKubernetesObject<V
 /// VolumeGroupSnapshotContent object.
 /// Required.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VolumeGroupSnapshotContentSpecDeletionPolicyEnum>))]
 [global::System.Obsolete]
 public enum V1beta1VolumeGroupSnapshotContentSpecDeletionPolicyEnum
@@ -74,7 +74,7 @@ public enum V1beta1VolumeGroupSnapshotContentSpecDeletionPolicyEnum
 /// representation was (or should be) created.
 /// This field is immutable.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete]
 public partial class V1beta1VolumeGroupSnapshotContentSpecSourceGroupSnapshotHandles
@@ -106,7 +106,7 @@ public partial class V1beta1VolumeGroupSnapshotContentSpecSourceGroupSnapshotHan
 /// This field is immutable after creation.
 /// Required.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete]
 public partial class V1beta1VolumeGroupSnapshotContentSpecSource
@@ -140,7 +140,7 @@ public partial class V1beta1VolumeGroupSnapshotContentSpecSource
 /// This field is immutable after creation.
 /// Required.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete]
 public partial class V1beta1VolumeGroupSnapshotContentSpecVolumeGroupSnapshotRef
@@ -202,7 +202,7 @@ public partial class V1beta1VolumeGroupSnapshotContentSpecVolumeGroupSnapshotRef
 /// Spec defines properties of a VolumeGroupSnapshotContent created by the underlying storage system.
 /// Required.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete]
 public partial class V1beta1VolumeGroupSnapshotContentSpec
@@ -275,7 +275,7 @@ public partial class V1beta1VolumeGroupSnapshotContentSpec
 /// Error is the last observed error during group snapshot creation, if any.
 /// Upon success after retry, this error field will be cleared.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete]
 public partial class V1beta1VolumeGroupSnapshotContentStatusError
@@ -295,7 +295,7 @@ public partial class V1beta1VolumeGroupSnapshotContentStatusError
 }
 
 /// <summary>VolumeSnapshotHandlePair defines a pair of a source volume handle and a snapshot handle</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete]
 public partial class V1beta1VolumeGroupSnapshotContentStatusVolumeSnapshotHandlePairList
@@ -318,7 +318,7 @@ public partial class V1beta1VolumeGroupSnapshotContentStatusVolumeSnapshotHandle
 }
 
 /// <summary>status represents the current information of a group snapshot.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete]
 public partial class V1beta1VolumeGroupSnapshotContentStatus
@@ -373,7 +373,7 @@ public partial class V1beta1VolumeGroupSnapshotContentStatus
 /// VolumeGroupSnapshotContent represents the actual &quot;on-disk&quot; group snapshot object
 /// in the underlying storage system
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
