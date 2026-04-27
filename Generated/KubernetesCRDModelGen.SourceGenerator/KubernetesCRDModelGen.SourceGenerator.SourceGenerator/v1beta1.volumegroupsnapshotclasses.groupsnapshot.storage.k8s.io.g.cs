@@ -15,7 +15,7 @@ namespace KubernetesCRDModelGen.Models.groupsnapshot.storage.k8s.io;
 /// is used by specifying its name in a VolumeGroupSnapshot object.
 /// VolumeGroupSnapshotClasses are non-namespaced.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -39,7 +39,7 @@ public partial class V1beta1VolumeGroupSnapshotClassList : IKubernetesObject<V1L
 
     /// <summary>List of V1beta1VolumeGroupSnapshotClass objects.</summary>
     [JsonPropertyName("items")]
-    public IList<V1beta1VolumeGroupSnapshotClass>? Items { get; set; }
+    public required IList<V1beta1VolumeGroupSnapshotClass> Items { get; set; }
 }
 
 /// <summary>
@@ -53,7 +53,7 @@ public partial class V1beta1VolumeGroupSnapshotClassList : IKubernetesObject<V1L
 /// snapshot on underlying storage system are deleted.
 /// Required.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VolumeGroupSnapshotClassDeletionPolicyEnum>))]
 [global::System.Obsolete]
 public enum V1beta1VolumeGroupSnapshotClassDeletionPolicyEnum
@@ -70,7 +70,7 @@ public enum V1beta1VolumeGroupSnapshotClassDeletionPolicyEnum
 /// is used by specifying its name in a VolumeGroupSnapshot object.
 /// VolumeGroupSnapshotClasses are non-namespaced.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]

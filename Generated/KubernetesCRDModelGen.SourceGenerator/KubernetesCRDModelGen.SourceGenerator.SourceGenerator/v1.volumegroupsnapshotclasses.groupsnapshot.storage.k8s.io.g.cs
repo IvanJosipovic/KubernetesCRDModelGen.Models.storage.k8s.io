@@ -15,7 +15,7 @@ namespace KubernetesCRDModelGen.Models.groupsnapshot.storage.k8s.io;
 /// is used by specifying its name in a VolumeGroupSnapshot object.
 /// VolumeGroupSnapshotClasses are non-namespaced.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1VolumeGroupSnapshotClassList : IKubernetesObject<V1ListMeta>, IItems<V1VolumeGroupSnapshotClass>
@@ -38,7 +38,7 @@ public partial class V1VolumeGroupSnapshotClassList : IKubernetesObject<V1ListMe
 
     /// <summary>List of V1VolumeGroupSnapshotClass objects.</summary>
     [JsonPropertyName("items")]
-    public IList<V1VolumeGroupSnapshotClass>? Items { get; set; }
+    public required IList<V1VolumeGroupSnapshotClass> Items { get; set; }
 }
 
 /// <summary>
@@ -52,7 +52,7 @@ public partial class V1VolumeGroupSnapshotClassList : IKubernetesObject<V1ListMe
 /// snapshot on underlying storage system are deleted.
 /// Required.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1VolumeGroupSnapshotClassDeletionPolicyEnum>))]
 public enum V1VolumeGroupSnapshotClassDeletionPolicyEnum
 {
@@ -68,7 +68,7 @@ public enum V1VolumeGroupSnapshotClassDeletionPolicyEnum
 /// is used by specifying its name in a VolumeGroupSnapshot object.
 /// VolumeGroupSnapshotClasses are non-namespaced.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1VolumeGroupSnapshotClass : IKubernetesObject<V1ObjectMeta>
